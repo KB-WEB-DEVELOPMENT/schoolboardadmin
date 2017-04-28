@@ -23,7 +23,7 @@ class CreateCourseFormRequest extends FormRequest
      */
   public function rules()
     {
-        // leveraging unique:users, email. We don't want to send an Invite to a User that already exists.
+       
         return [
             'title' => 'bail|required|alpha|min:3|max:50',
             'course_number' => 'bail|required|integer|unique',
