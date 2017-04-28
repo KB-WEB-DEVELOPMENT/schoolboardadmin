@@ -5,9 +5,6 @@ namespace App\Listeners;
 use Mail;
 use App\User;
 
-//use App\Events\PostReported;
-//use App\Mail\PostReported as PostReportedEmail;
-
 use App\Events\GradeAdded;
 use App\Mail\GradeAdded as GradeAddedEmail;
 
