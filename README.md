@@ -2,17 +2,22 @@ SchoolBoardAdmin -- Laravel 5-3
 
 SchoolBoardAdmin is an multilingual (English, French and German) application which allows registered users with their role set as "admin" to 
 
-(1) give grade to registered students (i.e: registered users with role set as "student") (2) modify the grades received by any student for a course taken
+(1) give grade to registered students (i.e: registered users with role set as "student")
+(2) modify the grades received by any student for a course taken
+(3) delete students 
+(4) add courses
+(5) modify courses details (course description, availability)
 
-(3) delete students (4) add courses and (5) modify courses details (course description, availability)
+Non-registered users can:
 
-Non-registered users can (1) view students details (courses taken with given grade + view overall average grade), (2) search students 
+(1) view students details (courses taken with given grade + view overall average grade)
+(2) search students 
+(3) view courses details
+(4) search courses.
 
-(3) view courses details (4) search courses.
+SchoolBoardAdmin is meant to give an example of how to combine
 
-
-SchoolBoardAdmin is meant to give an example of how to combine (1) "Many-to-Many" relations within Laravel (MVC) models with
-
+(1) "Many-to-Many" relations within Laravel (MVC) models with
 (2) a pivot table ("courses_students_table")
 
 More infos on Laravel "Many-to-Many" relations: 
@@ -36,8 +41,10 @@ Installation
         set DB_PASSWORD
 
 Features
+---------
 
 For non-registered users:
+--------------------------
 
 Students listing
 View any student details (courses taken, grades received 10%-100%, overall average grade)
@@ -47,6 +54,7 @@ Course search
 Registering
 
 For Admin:
+-----------
 
 Login
 Add a new course grade (10%-100%) for any registered students
@@ -56,6 +64,7 @@ Modify course details (1.course description 2. select "avaible" or "unavailable"
 (An automatic notification-email is sent to the student after he has received a new grade posted by an admin)
 
 For Students:
+--------------
 
 Registering
 
@@ -69,6 +78,7 @@ Make sure you configure these environment variables:
     PUSHER_APP_ID, PUSHER_KEY and PUSHER_SECRET: the connection configuration for the pusher broadcast driver.
 
 Further steps:
+---------------
 
     Set the QUEUE_DRIVER environment variable to database.
     Set the APP_ENV environment variable to production when the app is on a live sever, to force HTTPS connections on all routes.
@@ -76,6 +86,7 @@ Further steps:
 
 
 Additional Packages
+----------------------
 
 Carbon
 Tuitionfees (my own !)
@@ -87,6 +98,7 @@ https://devdojo.com/blog/tutorials/how-to-create-a-laravel-package
 
 
 Commands
+---------
 
 I created  one command to be used with this application:
 
@@ -99,6 +111,7 @@ I created  one command to be used with this application:
 For all details, please study the following file: SchoolBoardAdmin/app/Console/Commands/DeleteStudent.php as well as Laravel offical documentation on commands.
 
 Tests
+------
 
 When you want to launch the tests first rollback the database :
 
