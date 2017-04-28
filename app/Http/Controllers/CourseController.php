@@ -11,9 +11,9 @@ class CourseController extends Controller   {
 	public function index() {
 
 		$courses = App\Course::all();
-                  ->orderBy('title', 'asc')
-                  ->paginate(15)
-                  ->get();
+                  	   ->orderBy('title', 'asc')
+                  	   ->paginate(15)
+                           ->get();
 
 		return view('front.courses.list', [ 'courses' => $courses ]);
 
@@ -34,18 +34,18 @@ class CourseController extends Controller   {
 		if ($searched_course_title && $searched_course_number) {
 
 			   $courses_found = DB::table('course')
-                                     ->where('title', 'LIKE', $searched_course_title)
-                                     ->orWhere('course_number', 'LIKE',$searched_course_number)
-                                     ->orderBy('title', 'asc')
-                                     ->get();
+                                            ->where('title', 'LIKE', $searched_course_title)
+                                            ->orWhere('course_number', 'LIKE',$searched_course_number)
+                                            ->orderBy('title', 'asc')
+                                            ->get();
 
 
 		}	elseif ($searched_course_title) {
 
 			   $courses_found = DB::table('course')
-              						 ->where('title', 'LIKE', $searched_course_title)
-              						 ->orderBy('title', 'asc')      
-              						 ->get();
+              				    ->where('title', 'LIKE', $searched_course_title)
+              				    ->orderBy('title', 'asc')      
+              				    ->get();
 			}   
 
 			return view('front.course.found', [ 'courses_found' => $courses_found ]);
