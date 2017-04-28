@@ -95,7 +95,7 @@ Modify course details (1.course description 2. select "avaible" or "unavailable"
 For Students:
 --------------
 
-Registering
+Registering (+ Login afterwards)
 
 (Receives an automatic notification-email after a new grade has been posted)
 
