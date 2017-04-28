@@ -24,6 +24,8 @@ view courses details
 
 search courses.
 
+Registering (+ Login afterwards)
+
 SchoolBoardAdmin is meant to give an example of how to combine
 
 "Many-to-Many" relations within Laravel (MVC) models with a pivot table ("courses_students_table")
@@ -75,7 +77,7 @@ Student search
 
 Course search
 
-Registering
+Registering (+ Login afterwards)
 
 For Admin:
 -----------
