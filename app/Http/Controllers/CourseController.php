@@ -21,7 +21,6 @@ class CourseController extends Controller   {
 
 	public function search() {
 
-
 		return view('front.course.search');
 
 	}
@@ -62,7 +61,6 @@ class CourseController extends Controller   {
 	}
 
 	public function create() {
-
 
 		return view('back.course.create');
 
@@ -107,7 +105,5 @@ class CourseController extends Controller   {
 		return view('back.course.change');
 
 	}
-
-
     
 }
