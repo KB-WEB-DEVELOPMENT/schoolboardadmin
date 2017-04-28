@@ -1,9 +1,7 @@
 SchoolBoardAdmin -- Laravel 5-3 
 -----------------------------------
 
-SchoolBoardAdmin is an multilingual (English, French and German) application which allows registered users with their role set as "admin" to 
-
-give grade to registered students (i.e: registered users with role set as "student")
+SchoolBoardAdmin is an multilingual (English, French and German) application which allows registered users with their role set as "admin" to give grade to registered students (i.e: registered users with role set as "student")
 modify the grades received by any student for a course taken
 delete students 
 add courses
@@ -19,12 +17,12 @@ search courses.
 
 SchoolBoardAdmin is meant to give an example of how to combine
 
-"Many-to-Many" relations within Laravel (MVC) models with
-a pivot table ("courses_students_table")
+"Many-to-Many" relations within Laravel (MVC) models with a pivot table ("courses_students_table")
 
 More infos on Laravel "Many-to-Many" relations: 
 
 http://www.easylaravelbook.com/blog/2016/04/06/introducing-laravel-many-to-many-relations/
+
 http://laraveldaily.com/pivot-tables-and-many-to-many-relationships/ 
 
  
@@ -96,6 +94,7 @@ Tuitionfees (my own !)
 More infos on creating packages:  
 
 http://laraveldaily.com/how-to-create-a-laravel-5-package-in-10-easy-steps/
+
 https://devdojo.com/blog/tutorials/how-to-create-a-laravel-package 
 
 
