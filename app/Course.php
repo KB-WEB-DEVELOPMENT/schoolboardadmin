@@ -41,7 +41,7 @@ class Course extends Model  {
 
     public function count() {
 
-        $count = App\Courses->count();
+        $count = App\Course->count();
     
         return $count;
     }  
