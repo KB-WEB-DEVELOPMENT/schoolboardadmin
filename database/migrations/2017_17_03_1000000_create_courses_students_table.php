@@ -33,6 +33,6 @@ class CreateCourseStudentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('StudentsCoursesGrades');
+        Schema::dropIfExists('course_student');
     }
 }
