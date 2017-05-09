@@ -99,6 +99,9 @@ Registering (+ Login afterwards)
 
 (Receives an automatic notification-email after a new grade has been posted)
 
+Configuration:
+---------------
+
 Make sure you configure these environment variables:
 
 APP_URL : the url of the application. This variable is used for linking to the application in emails.
