@@ -1,7 +1,7 @@
 SchoolBoardAdmin -- Laravel 5-3 
 -----------------------------------
 
-SchoolBoardAdmin is an multilingual (English, French and German) application which allows registered users with their role set as "admin" to:
+SchoolBoardAdmin is a multilingual (English, French and German) application which allows registered users with their role set as "admin" to:
 
 give grade to registered students (i.e: registered users with role set as "student")
 
