@@ -3,7 +3,7 @@ SchoolBoardAdmin -- Laravel 5-3
 
 SchoolBoardAdmin is a multilingual (English, French and German) application which allows registered users with their role set as "admin" to:
 
-give grade to registered students (i.e: registered users with role set as "student")
+give one or more grades to registered students (i.e: registered users with role set as "student") for any courses taken
 
 modify the grades received by any student for a course taken
 
@@ -11,7 +11,7 @@ delete students
 
 add courses
 
-modify courses details (course description, availability)
+modify courses details (course description and availability)
 
 Non-registered users can:
 ---------------------------
@@ -89,6 +89,8 @@ Add a new course grade (10%-100%) for any registered students
 Modify course grades (10%-100%) received by any registered students
 
 Modify course details (1.course description 2. select "avaible" or "unavailable")
+
+Delete registered students
  
 (An automatic notification-email is sent to the student after he has received a new grade posted by an admin)
 
