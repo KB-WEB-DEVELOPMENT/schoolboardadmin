@@ -57,7 +57,7 @@ class CourseController extends Controller   {
 
 		$course = App\Course::findOrFail($course_id);
                
-		return view('front.course.show', [ 'course' => $course,]);
+		return view('front.course.show', [ 'course' => $course ]);
 	}
 
 	public function create() {
@@ -87,7 +87,7 @@ class CourseController extends Controller   {
 
 		$course = App\Course::findOrFail($course_id);
 
-		return view('back.course.edit', [ 'course' => $course,]);
+		return view('back.course.edit', [ 'course' => $course ]);
 
 	}
 
