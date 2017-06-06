@@ -64,7 +64,7 @@ set DB_PASSWORD
 Features
 ---------
 
-For non-registered users:
+1.For non-registered users:
 --------------------------
 
 Students listing
@@ -79,7 +79,7 @@ Course search
 
 Registering (+ Login afterwards)
 
-For Admin:
+2.For Admin:
 -----------
 
 Login
@@ -94,7 +94,7 @@ Delete registered students
  
 (An automatic notification-email is sent to the student after he has received a new grade posted by an admin)
 
-For Students:
+3.For Students:
 --------------
 
 Registering (+ Login afterwards)
@@ -142,9 +142,7 @@ Commands
 
 I created  one command to be used with this application:
 
-A registered user with his/her role set as "admin" can directly delete/remove a registered user with his/her role set as 
-
-"student" from the application.
+A registered user with his/her role set as "admin" can directly delete/remove a registered user with his/her role set as "student" from the application.
 
 To do so, execute : delete:student {user : The ID of the user}
 
