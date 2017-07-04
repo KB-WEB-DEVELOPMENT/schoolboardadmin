@@ -10,10 +10,10 @@ class CourseController extends Controller   {
 
 	public function index() {
 
-		$courses = App\Course::all();
+		$courses = App\Course::all()
                   	   ->orderBy('title', 'asc')
                   	   ->paginate(15)
-                           ->get();
+                       ->get();
 
 		return view('front.courses.list', [ 'courses' => $courses ]);
 
